@@ -2,13 +2,13 @@
 
 cd /d %~dp0
 
-bitsadmin /transfer vc16_x86 /download /priority normal https://aka.ms/vs/16/release/vc_redist.x86.exe %cd%\vc16_x86.exe
-echo Installing VC16 redist (2015, 2017, 2019, 2022) x86 ...
+bitsadmin /transfer vc17_x86 /download /priority normal https://aka.ms/vs/17/release/vc_redist.x86.exe %cd%\vc17_x86.exe
+echo Installing VC17 redist (2015, 2017, 2019, 2022) x86 ...
 start /wait vc16_x86.exe /passive /norestart
 
-bitsadmin /transfer vc16_x86 /download /priority normal https://aka.ms/vs/16/release/vc_redist.x64.exe %cd%\vc16_x64.exe
-echo Installing VC16 redist (2015, 2017, 2019, 2022) x64 ...
-start /wait vc16_x64.exe /passive /norestart
+bitsadmin /transfer vc17_x64 /download /priority normal https://aka.ms/vs/17/release/vc_redist.x64.exe %cd%\vc17_x64.exe
+echo Installing VC17 redist (2015, 2017, 2019, 2022) x64 ...
+start /wait vc17_x64.exe /passive /norestart
 
 
 
