@@ -52,9 +52,9 @@ start /wait vc9_x64.exe /qb
 
 
 
-bitsadmin /transfer vc8_x86 /download /priority normal https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x86.EXE %cd%\vc9_x86.exe
+bitsadmin /transfer vc8_x86 /download /priority normal https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x86.EXE %cd%\vc8_x86.exe
 echo Installing VC8 redist (2005) x86 ...
-start /wait vc9_x86.exe /q
+start /wait vc8_x86.exe /q
 
 bitsadmin /transfer vc8_x64 /download /priority normal https://download.microsoft.com/download/8/B/4/8B42259F-5D70-43F4-AC2E-4B208FD8D66A/vcredist_x64.EXE %cd%\vc8_x64.exe
 echo Installing VC8 redist (2005) x64 ...
